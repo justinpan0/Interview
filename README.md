@@ -12,3 +12,7 @@ By write the first string twice for each char, and then insert a pair of differe
 3. Is there a perfect compiler?
 
 No, because otherwise it can find the shortest program, which is Turing undecidable; it also can find infinite loop, and replace it with one line, which is also Turing undecidable.
+
+4. Introsort
+
+If size is small, use insertion sort; if recursive depth deeper then 2*log(n), use heapsort; else use quicksort.
