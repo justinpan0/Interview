@@ -16,3 +16,7 @@ No, because otherwise it can find the shortest program, which is Turing undecida
 4. Introsort
 
 If size is small, use insertion sort; if recursive depth deeper then 2*log(n), use heapsort; else use quicksort.
+
+5. To find the most frequent element in 100M data?
+
+If no assumption whatsoever, then hashtable is good b/c it provide with constant running steps with O(n) memory. If we assume that the most frequent data is very frequent, then use Misra-Gries edge coloring algorithm that achieve with O(k) memory and O(n log(k)) time.
