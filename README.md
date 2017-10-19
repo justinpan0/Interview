@@ -22,5 +22,5 @@ If size is small, use insertion sort; if recursive depth deeper then 2*log(n), u
 If no assumption whatsoever, then hashtable is good b/c it provide with constant running steps with O(n) memory. If we assume that the most frequent data is very frequent, then use Misra-Gries edge coloring algorithm that achieve with O(k) memory and O(n log(k)) time.
 
 6. How to find whether two strings are equal?
-
+(KMP, RK Algorithm)
 Use fingerprint as string identity. Give weight to each digit, and sum the products of each digit weight times the digit ASCII value. If not equal, then reject right away; otherwise, run a detail comparison. To avoid int overflow, use fingerprint h = pow(d, M-1) % q (M and q co-prime).
