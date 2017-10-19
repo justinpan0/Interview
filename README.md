@@ -20,3 +20,7 @@ If size is small, use insertion sort; if recursive depth deeper then 2*log(n), u
 5. To find the most frequent element in 100M data?
 
 If no assumption whatsoever, then hashtable is good b/c it provide with constant running steps with O(n) memory. If we assume that the most frequent data is very frequent, then use Misra-Gries edge coloring algorithm that achieve with O(k) memory and O(n log(k)) time.
+
+6. How to find whether two strings are equal?
+
+Use fingerprint as string identity. Give weight to each digit, and sum the products of each digit weight times the digit ASCII value. If not equal, then reject right away; otherwise, run a detail comparison.
